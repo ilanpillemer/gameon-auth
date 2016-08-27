@@ -61,6 +61,8 @@
 
   <jndiEntry jndiName="developmentMode" value="${env.GAMEON_MODE}"/>
 
+  <!-- turn off polling -->
+  <config updateTrigger="mbean" />
   <applicationMonitor dropinsEnabled="false" updateTrigger="mbean"/>
 
   <!-- This is required to prevent the web apps from being lazily loaded -->
