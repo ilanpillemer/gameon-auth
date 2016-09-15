@@ -2,11 +2,10 @@
 
   <!-- restConnector -->
   <featureManager>
-      <feature>restConnector-1.0</feature>
+      <feature>localConnector-1.0</feature>
   </featureManager>
 
-  <!-- restConnector is password protected / administrative interface -->
-  <quickStartSecurity userPassword="adminPassword" userName="admin"/>
+  <logging consoleLogLevel="INFO" />
 
   <applicationMonitor updateTrigger="polled" pollingRate="30s"/>
   <config updateTrigger="polled" monitorInterval="30s" />
